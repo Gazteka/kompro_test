@@ -42,8 +42,9 @@ data_daily =  data_1d.asfreq("1d").ffill()
 last_date = df.index[-1]
 last_close = df.iloc[-1]["close"]
 st.text(f"Ultima fecha registrada {last_date} con un cierre de {last_close}")
-ruta_ordenes = os.path.join("Users","HP","Desktop","QRT","Kompro","ordenes.csv")
-ruta = os.path.join("C:\\Users","HP","Desktop","QRT","Kompro","ordenes.csv")
+# ruta_ordenes = os.path.join("Users","HP","Desktop","QRT","Kompro","ordenes.csv")
+# ruta = os.path.join("C:\\Users","HP","Desktop","QRT","Kompro","ordenes.csv")
+ruta = "ordenes.csv"
 
 data_ordenes = pd.read_csv(ruta)
 data_ordenes.index =data_ordenes["id"]
