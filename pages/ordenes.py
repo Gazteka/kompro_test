@@ -1,4 +1,5 @@
 import datetime
+import os
 import random
 
 import numpy as np
@@ -8,8 +9,6 @@ import plotly.graph_objects as go
 import pmdarima as pm
 import requests
 import streamlit as st
-import os
-
 
 if 'stage' not in st.session_state:
     st.session_state.stage = 0
